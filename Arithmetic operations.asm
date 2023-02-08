@@ -1,4 +1,4 @@
-; Program to perform 4 arithmetic operations in EMU8086 Assembly
+; 8-bit program to perform the 4 arithmetic operations in EMU8086 Assembly
 
 org 100h
 
@@ -100,7 +100,7 @@ mov ah, 4ch
 int 21h
 
 display_minus:
-; result is negative, display "-"
+;if result is negative, display "-"
 mov dl, '-'
 mov ah, 2
 int 21h
